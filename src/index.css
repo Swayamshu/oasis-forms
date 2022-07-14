@@ -1,13 +1,145 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    font-family: "Lato";
+    font-size: 18px;
+    color: #023047;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background-color: #dfe1ff;
+}
+
+button {
+    cursor: pointer;
+    width: fit-content;
+    padding: 1vw;
+    border: 0;
+    border-radius: 4px;
+}
+
+.icon {
+    color: #e63946;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.layout {
+    display: block;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    padding: 1vw 1vw 2vw;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+    background-color: #023047;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    padding: 0.5vw 0 5vw;
+}
+
+.form-data {
+    display: flex;
+    align-items: center;
+}
+
+.form-data-container {
+    margin: 0.5vw 1vw;
+    padding: 2vw;
+    background-color: white;
+    border-radius: 10px;
+    width: 45vw;
+}
+
+.form-data-header {
+    margin-bottom: 1vw;
+    /* display: flex; */
+    align-items: center;
+}
+
+.form-data-input {
+    margin: 0.5vw;
+}
+
+.form-data-input .icon {
+    position: absolute;
+}
+
+.form-data-header input {
+    padding: 1vw;
+    width: 25vw;
+    border: 0;
+    border-bottom: 2px solid #023047;
+}
+
+.form-data-options {
+    display: grid;
+    grid-template-columns: auto;
+    width: fit-content;
+    margin-left: 0.5vw;
+}
+
+.form-options-input {
+    margin: 0.2vw;
+}
+
+.form-data-options input {
+    padding: 0.5vw;
+    border: 0;
+    border-radius: 0;
+    /* border-bottom: 2px solid #1d3557; */
+}
+
+.add-option {
+    margin: 1vw 0.5vw 0;
+}
+
+.form-option {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    margin-top: 1.5vw;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.delete-form-icon {
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.form-btn-container {
+    margin: 0.5vw 2vw;
+}
+
+.add-save-btn {
+    margin: 0 0.5vw;
+    color: white;
+    background-color: #023047;
 }
