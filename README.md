@@ -1,6 +1,8 @@
 # Project Screenshots
 
-![Image 1](/public/logo192.png)
+![Image 1](/public/Screenshot 1.png)
+![Image 2](/public/Screenshot 2.png)
+![Image 3](/public/Screenshot 3.png)
 
 ## Available Scripts
 
